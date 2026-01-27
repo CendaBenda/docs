@@ -100,7 +100,7 @@ jobs:
       -
         name: Install reviewdog
         if: ${{ matrix.target == 'vale' && github.event_name == 'pull_request' }}
-        uses: reviewdog/action-setup@e04ffabe3898a0af8d0fb1af00c188831c4b5893 # v1.3.2
+        uses: reviewdog/action-setup@0dd4b8fe6186a79b3e27819169b1b570895086f0 # v1.3.2
       -
         name: Run reviewdog for vale
         if: ${{ matrix.target == 'vale' && github.event_name == 'pull_request' }}
